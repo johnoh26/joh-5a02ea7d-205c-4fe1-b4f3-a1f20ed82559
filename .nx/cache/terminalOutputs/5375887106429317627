@@ -1,0 +1,26 @@
+[2m> [22mwebpack-cli build --node-env=production
+
+
+[0m[7m[1m[31m NX [39m[22m[27m[0m  [31mAn error occured while creating pruned lockfile[39m
+
+Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+To prevent the build from breaking we are returning the root lock file.
+If you run `npm install --package-lock-only` in your output folder it will regenerate the correct pruned lockfile.
+
+Original error: Pruned lock file creation failed. The following package was not found in the root lock file: @nestjs/jwt@^11.0.1
+
+
+Error: Pruned lock file creation failed. The following package was not found in the root lock file: @nestjs/jwt@^11.0.1
+    at C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\nx\src\plugins\js\lock-file\project-graph-pruning.js:70:19
+    at Array.forEach (<anonymous>)
+    at normalizeDependencies (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\nx\src\plugins\js\lock-file\project-graph-pruning.js:41:42)
+    at pruneProjectGraph (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\nx\src\plugins\js\lock-file\project-graph-pruning.js:20:34)
+    at createLockFile (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\nx\src\plugins\js\lock-file\lock-file.js:210:79)
+    at C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\@nx\webpack\src\plugins\generate-package-json-plugin.js:46:142
+    at fn (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\webpack\lib\Compilation.js:570:10)
+    at _next0 (eval at create (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:11:1)
+    at eval (eval at create (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:24:1)
+    at Hook.eval [as callAsync] (eval at create (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:6:1)
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 138 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (fe0cc44a2a7fcc23)

@@ -1,0 +1,22 @@
+{
+  "name": "@joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559/libs",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "dependencies": {
+    "@nestjs/config": "^4.0.2",
+    "dotenv": "^17.2.3",
+    "tslib": "^2.3.0",
+    "typeorm": "^0.3.27",
+    "typeorm-ts-node-commonjs": "^0.3.20"
+  },
+  "scripts": {
+    "migration:generate": "npx ts-node -P ./tsconfig.json -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:generate -d ./src/data/config/typeorm.config.ts ./src/data/database/migrations/migration",
+    "migration:create": "npx ts-node -P ./tsconfig.json -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:create -d ./src/data/config/typeorm.config.ts ./src/data/database/migrations/migration",
+    "migration:run": "npx ts-node -P ./tsconfig.json -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:run -d ./src/data/config/typeorm.config.ts",
+    "migration:revert": "npx ts-node -P ./tsconfig.json -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:revert -d ./src/data/config/typeorm.config.ts"
+  },
+  "module": "./src/data/libs/src/index.js",
+  "type": "module"
+}
