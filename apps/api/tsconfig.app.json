@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "types": ["node"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "useDefineForClassFields": false,
+    "target": "es2015",
+    "module": "esnext",
+  },
+  "include": ["src/**/*.ts", "../../libs/src/data/audit.entity.ts", "../../libs/src/data/base.entity.ts", "../../libs/src/data/enums.ts", "../../libs/src/data/organization.entity.ts", "../../libs/src/data/task.entity.ts"],
+  "exclude": ["jest.config.ts", "src/**/*.spec.ts", "src/**/*.test.ts"]
+}
