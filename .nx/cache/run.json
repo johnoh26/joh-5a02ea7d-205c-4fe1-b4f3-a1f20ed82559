@@ -1,0 +1,32 @@
+{
+  "run": {
+    "command": "nx run api:build:development",
+    "startTime": "2025-11-13T01:57:38.965Z",
+    "endTime": "2025-11-13T01:57:46.751Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "libs:build",
+      "target": "build",
+      "projectName": "libs",
+      "hash": "8438459882769851460",
+      "startTime": "2025-11-13T01:57:38.975Z",
+      "endTime": "2025-11-13T01:57:39.014Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "api:build:development",
+      "target": "build",
+      "projectName": "api",
+      "hash": "4663026076890426105",
+      "startTime": "2025-11-13T01:57:39.017Z",
+      "endTime": "2025-11-13T01:57:46.742Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+Daemon process terminated and closed the connection
+
+Messages from the log:
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:29.665Z - [WATCHER]: Processing file changes in outputs
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:29.666Z - [WATCHER]: package-lock.json was modified
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:29.666Z - Done responding to the client null
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:30.343Z - Started listening on: \\.\pipe\nx\C:\Users\JO-DES~1\AppData\Local\Temp\77ddd77dbd375ef6efbf\d.sock
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:30.360Z - [WATCHER]: Subscribed to changes within: c:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559 (native)
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:30.362Z - Established a connection. Number of open connections: 1
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:30.363Z - Established a connection. Number of open connections: 2
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:30.364Z - Established a connection. Number of open connections: 3
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:30.364Z - Established a connection. Number of open connections: 4
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:30.366Z - Closed a connection. Number of open connections: 3
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:30.366Z - Closed a connection. Number of open connections: 2
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:30.380Z - Closed a connection. Number of open connections: 1
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:30.380Z - Closed a connection. Number of open connections: 0
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:30.381Z - [WATCHER]: Stopping the watcher for c:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559 (sources)
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:30.381Z - [WATCHER]: Stopping the watcher for c:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559 (outputs)
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:30.391Z - Started listening on: \\.\pipe\nx\C:\Users\JO-DES~1\AppData\Local\Temp\77ddd77dbd375ef6efbf\d.sock
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:30.397Z - [WATCHER]: Subscribed to changes within: C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559 (native)
+[NX v22.0.2 Daemon Server] - 2025-11-13T01:30:30.397Z - Server stopped because: "this process is no longer the current daemon (native)"
+
+
+
+More information: c:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\.nx\workspace-data\d\daemon.log

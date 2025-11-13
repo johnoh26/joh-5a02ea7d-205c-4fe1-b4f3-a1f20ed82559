@@ -1,0 +1,78 @@
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  [36mRunning target [1mbuild[22m for project api and [1m1[22m task it depends on:[39m
+
+
+(node:15784) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[2m> [22m[2mnx run[22m libs:build  [2m[existing outputs match the cache, left as is][22m
+
+
+[2m> [22m[2mnx run[22m api:build:development  [2m[local cache][22m
+
+[2m> [22mwebpack-cli build --node-env=development
+
+
+[0m[7m[1m[31m NX [39m[22m[27m[0m  [31mAn error occured while creating pruned lockfile[39m
+
+Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+To prevent the build from breaking we are returning the root lock file.
+If you run `npm install --package-lock-only` in your output folder it will regenerate the correct pruned lockfile.
+
+Original error: Pruned lock file creation failed. The following package was not found in the root lock file: @nestjs/jwt@^11.0.1
+
+
+Error: Pruned lock file creation failed. The following package was not found in the root lock file: @nestjs/jwt@^11.0.1
+    at C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\nx\src\plugins\js\lock-file\project-graph-pruning.js:70:19
+    at Array.forEach (<anonymous>)
+    at normalizeDependencies (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\nx\src\plugins\js\lock-file\project-graph-pruning.js:41:42)
+    at pruneProjectGraph (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\nx\src\plugins\js\lock-file\project-graph-pruning.js:20:34)
+    at createLockFile (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\nx\src\plugins\js\lock-file\lock-file.js:210:79)
+    at C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\@nx\webpack\src\plugins\generate-package-json-plugin.js:46:142
+    at fn (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\webpack\lib\Compilation.js:570:10)
+    at _next0 (eval at create (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:21:1)
+    at eval (eval at create (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:34:1)
+    at eval (eval at create (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:11:1)
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 138 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (7266dc1142ac9019)
+
+
+
+[0m[7m[1m[32m NX [39m[22m[27m[0m  [32mSuccessfully ran target [1mbuild[22m for project api and [1m1[22m task it depends on[39m
+
+[2mNx read the output from the cache instead of running the command for 2 out of 2 tasks.[22m
+
+
+[0m[7m[1m[33m NX [39m[22m[27m[0m  [33mNx Cloud encountered some problems[39m
+
+This workspace is more than three days old and is not connected. Workspaces must be connected within 3 days of creation. Claim your workspace at https://cloud.nx.app. (code: 401)
+
+[1m[31mDebugger listening on ws://localhost:9229/7e1668db-4230-49e9-a7f7-5b29445fd045[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/7e1668db-4230-49e9-a7f7-5b29445fd045[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mC:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\apps\api\node_modules\node-gyp-build\node-gyp-build.js:60[39m[22m
+[1m[31m  throw new Error('No native build was found for ' + target + '\n    loaded from: ' + dir + '\n')[39m[22m
+[1m[31m^[39m[22m
+[1m[31m[39m[22m
+[1m[31mError: No native build was found for platform=win32 arch=x64 runtime=node abi=141 uv=1 libc=glibc node=25.0.0 webpack=true[39m[22m
+[1m[31m    loaded from: C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\dist\apps\api[39m[22m
+[1m[31m[39m[22m
+[1m[31m    at load.resolve.load.path (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\apps\api\node_modules\node-gyp-build\node-gyp-build.js:60:1)[39m[22m
+[1m[31m    at load (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\apps\api\node_modules\node-gyp-build\node-gyp-build.js:22:1)[39m[22m
+[1m[31m    at Object.<anonymous> (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\apps\api\node_modules\bcrypt\bcrypt.js:2:42)[39m[22m
+[1m[31m    at __webpack_require__ (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\dist\apps\api\webpack\bootstrap:19:1)[39m[22m
+[1m[31m    at C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\dist\apps\api\main.js:4943:14[39m[22m
+[1m[31m    at C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\dist\apps\api\main.js:5115:3[39m[22m
+[1m[31m    at Object.<anonymous> (C:\Users\JO-Desktop\repos\joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559\dist\apps\api\main.js:5117:12)[39m[22m
+[1m[31m    at Module._compile (node:internal/modules/cjs/loader:1759:14)[39m[22m
+[1m[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m[22m
+[1m[31m    at Module.load (node:internal/modules/cjs/loader:1479:32)[39m[22m
+[1m[31m[39m[22m
+
+[7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+[1m[31mWatch error: Daemon closed the connection[39m[22m

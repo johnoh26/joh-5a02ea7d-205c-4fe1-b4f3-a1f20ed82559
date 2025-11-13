@@ -1,0 +1,12 @@
+Compiling TypeScript files for project "libs"...
+[1m[31m[96m/Users/JO-Desktop/repos/joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559/libs/src/data/user.entity.ts[0m:[93m20[0m:[93m10[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Relation'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m20[0m   tasks: Relation<Task[]>;[39m[22m
+[1m[31m[7m  [0m [91m         ~~~~~~~~[0m[39m[22m
+[1m[31m[96m/Users/JO-Desktop/repos/joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559/libs/src/data/user.entity.ts[0m:[93m23[0m:[93m17[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Relation'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m23[0m   organization: Relation<Organization>;[39m[22m
+[1m[31m[7m  [0m [91m                ~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+
+[2m..\dist\libs\README.md[22m
