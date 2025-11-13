@@ -1,8 +1,0 @@
-Compiling TypeScript files for project "libs"...
-[1m[31m[96m/Users/JO-Desktop/repos/joh-5a02ea7d-205c-4fe1-b4f3-a1f20ed82559/libs/src/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './data/index' or its corresponding type declarations.[39m[22m
-[1m[31m[39m[22m
-[1m[31m[7m1[0m export * from './data/index';[39m[22m
-[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~[0m[39m[22m
-[1m[31m[39m[22m
-
-[2m..\dist\libs\README.md[22m
